@@ -1,0 +1,63 @@
+       
+        /* --- MODULAR CONSOLE THEME --- */
+        :root {
+            --bg-color: #000000; /* Pure Black Background */
+            --accent-color: #00ff66; /* Electric Green Neon */
+            --text-color: #ffffff; /* Pure White Text */
+            --module-bg: #0d0d0d; /* Slightly lighter module background */
+            --border-color: #333333;
+        }
+       
+        body {
+            font-family: 'Roboto Mono', monospace; /* Monospace for a tech feel */
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+        }
+       
+        /* General Sections Styling */
+        .content-section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+
+        /* Module Card Styles (Sharp corners, border glow on hover) */
+        .module-card {
+            transition: all 0.3s ease;
+            background-color: var(--module-bg);
+            border: 1px solid var(--border-color);
+        }
+       
+        .module-card:hover {
+            box-shadow: 0 0 15px var(--accent-color); /* Neon glow effect */
+            border-color: var(--accent-color);
+        }
+
+
+        /* Accent Styles */
+        .accent-link, .accent-text {
+            color: var(--accent-color);
+            transition: all 0.3s ease;
+            font-weight: 700;
+        }
+       
+        .accent-link:hover {
+            opacity: 0.7;
+            text-decoration: underline;
+        }
+       
+        .skill-tag {
+            background-color: rgba(0, 255, 102, 0.1); /* Light transparent green */
+            color: var(--accent-color);
+            border: 1px solid rgba(0, 255, 102, 0.4);
+            font-family: 'Inter', sans-serif; /* Use Inter for better readability in tags */
+        }
+       
+        .section-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
